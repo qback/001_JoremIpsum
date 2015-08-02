@@ -1,0 +1,127 @@
+/* Services and Features Styles */
+
+.feature {
+  float: left;
+  width: 50%;
+  padding-top: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 6rem;
+  @include phone {
+    padding-top: 3rem;
+    padding-right: 3em;
+    padding-bottom: 3rem;
+  }
+  @include tiny {
+    float: none;
+    width: 100%;
+  }
+  &:nth-child(even) {
+    border-left: 1px solid $divider-color;
+    @include tiny {
+      border-left: none;
+    }
+  }
+}
+
+.feature__figure {
+  float: left;
+  width: 28.3%;
+  @include tablet {
+    width: 33%;
+  }
+  @include phone {
+    display: none;
+  }
+}
+
+.feature__img {
+  display: block;
+  margin: 0 auto;
+  @include tablet {
+    width: 80%;
+  }
+}
+
+.feature__body {
+  margin-left: 28.3%;
+  @include tablet {
+    margin-left: 33%;
+  }
+  @include phone {
+    margin-left: 3rem;
+  }
+}
+
+.feature__title {
+  color: $violet;
+}
+
+.feature__subhead {
+  font-size: 2em;
+  font-weight: $base-font-weight-light;
+  margin-bottom: 2.5rem;
+  color: $orange;
+  @include tablet {
+    font-size: 1.8em;
+    margin-bottom: 2rem;
+  }
+}
+
+.feature__text {
+  font-size: 1.5em;
+  line-height: 1.47;
+}
+
+.feature--inverse {
+  width: 100%;
+  background-color: $violet;
+  // @include scut-clearfix;
+  // padding-left: 10%;
+}
+
+.feature__figure--inverse {
+  width: 33%;
+  @include tablet {
+    width: 50%;
+  }
+}
+
+.feature__body--inverse {
+  margin-left: 33%;
+  @include tablet {
+    margin-left: 50%;
+  }
+  @include phone {
+    margin-left: 4rem;
+  }
+}
+
+.feature__title--inverse {
+  color: $white;
+}
+
+.feature__subhead--inverse {
+  color: $white;
+}
+
+.feature__text--inverse {
+  color: $orange;
+}
+
+.feature--gallery {
+  float: none;
+  clear: both;
+  width: 100%;
+  max-width: 71rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 6rem;
+  text-align: center;
+  @include phone {
+    padding-left:4rem; 
+  }
+}
+
+.feature__slider {
+  margin-top: 2rem;
+}

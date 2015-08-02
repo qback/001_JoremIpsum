@@ -1,0 +1,26 @@
+/* Footer Styles */
+
+.main-footer {
+  position: relative;
+  min-height: 11rem;
+  background-color: $footer-color;
+}
+
+.main-footer__info {
+  font-size: 1.5em;
+  line-height: 1.6;
+  text-align: center;
+  @include scut-center-transform;
+}
+
+.main-footer__info a {
+  color: $violet;
+  @include phone {
+    display: block;
+  }
+  & + span {
+    @include phone {
+      display: none;
+    }
+  }
+}

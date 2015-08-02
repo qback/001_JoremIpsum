@@ -1,0 +1,22 @@
+/* Back to Top Button Styles */
+
+
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: -9000px;
+  @include scut-triangle(up, 4rem, rgba($orange, .6));
+  @include phone {
+    right: 1rem;
+    bottom: 1rem;
+    @include scut-triangle(up, 3rem, rgba($orange, .6));
+  }
+}
+
+.back-to-top:hover {
+  opacity: .7;
+}

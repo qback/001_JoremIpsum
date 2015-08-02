@@ -1,0 +1,112 @@
+/* Header styles */
+
+.main-header {
+  position: relative;
+  border-top: .5rem solid $orange;
+  @include scut-clearfix;
+  @include tiny {
+    border-top: none;
+    border-bottom: .2rem solid $orange;
+  }
+}
+
+.main-header__logo {
+  float: left;
+  @include scut-center-transform(y);
+  @include tiny {
+    position: static;
+    float: none;
+    transform: none;
+    @include scut-center-block;
+  }
+}
+
+.logo {
+  width: 20rem;
+  @include tiny {
+    @include scut-clearfix;
+  }
+}
+
+.logo__img {
+  float: left;
+  margin-top: .5rem;
+  @include tiny {
+    width: 2.8rem;
+  }
+}
+
+.logo__text {
+  margin-left: 4.2rem;
+}
+
+.logo__name {
+  font-size: 1.9em;
+  font-weight: $base-font-weight-ultrabold;
+  margin: 0;
+  @include tiny {
+    font-size: 3em;
+  }
+}
+
+.logo__caption {
+  font-size: 1.5em;
+  font-weight: $base-font-weight-light;
+  margin: 0;
+  @include tiny {
+    @include scut-hide-visually;
+  }
+}
+
+.main-header__nav {
+  float: right;
+  @include tiny {
+    float: none;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  @include tiny {
+    border-top: .2rem solid $orange;
+  }
+}
+
+.main-nav__item {
+  font-family: $base-font-standard;
+  font-size: 1.3em;
+  line-height: 8rem;
+  display: inline-block;
+  height: 8rem;
+  margin-right: -.3rem;
+  text-transform: uppercase;
+  @include tiny {
+    line-height: 6rem;
+    height: 6rem;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 0 2rem;
+  transition: .3s background-color;
+  letter-spacing: .1em;
+  color: $base-color;
+  @include phone {
+    padding: 0 1.5rem;
+  }
+}
+
+.main-nav__link--active {
+  cursor: default;
+  color: #fff;
+  background-color: $orange;
+}
+
+.main-nav__link:hover {
+  color: #fff;
+  background-color: $orange;
+}

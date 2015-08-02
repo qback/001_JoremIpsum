@@ -1,0 +1,25 @@
+/* Banner Styles */
+
+
+.banner {
+  position: relative;
+  height: 44rem;
+  background-image: url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include phone {
+    height: 40rem;
+  }
+  @include tiny {
+    height: 30rem;
+  }
+}
+
+.banner__title {
+  padding: 1.6rem 1rem;
+  text-align: center;
+  letter-spacing: .05em;
+  color: $white;
+  background-color: rgba($violet, .6);
+  @include scut-center-transform;
+}

@@ -1,0 +1,43 @@
+/* Intro About Styles */
+
+.intro {
+  position: relative;
+  min-height: 27rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  background-color: $orange;
+  @include tablet {
+    min-height: 22rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  @include phone {
+    padding: 3rem 1rem;
+  }
+}
+
+.intro__container {
+  max-width: 57rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.intro__title {
+  margin-bottom: 2.4rem;
+  color: $white;
+  @include tablet {
+    margin-bottom: 1.8rem;
+  }
+}
+
+.intro__text {
+  font-size: 2em;
+  font-weight: $base-font-weight-light;
+  color: $white;
+}
+
+.intro__button {
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
